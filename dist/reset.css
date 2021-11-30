@@ -1,0 +1,87 @@
+/*
+Inspired and informed by:
+
+- Andy Bell's "A Modern CSS Reset" (https://piccalil.li/blog/a-modern-css-reset/)
+- Edoardo Cavazza's "Modern CSS Techniques To Improve Legibility" (https://www.smashingmagazine.com/2020/07/css-techniques-legibility/)
+- Josh Comeau's "My Custom CSS Reset" (https://www.joshwcomeau.com/css/custom-css-reset)
+- Scott O'Hara's "'Fixing' Lists" (https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html)
+- Zach Leatherman's "Barebones CSS for Fluid Images" (https://www.zachleat.com/web/fluid-images/)
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    block-size: 100%;
+}
+
+body {
+    line-height: max(calc(1ex / 0.32), 1.5);
+    -webkit-font-smoothing: antialiased;
+}
+
+canvas,
+img,
+picture,
+svg,
+video {
+    block-size: auto;
+    display: block;
+    max-block-size: 100%;
+    max-inline-size: 100%;
+}
+
+canvas,
+svg,
+video {
+    object-fit: contain;
+}
+
+img,
+picture {
+    object-fit: cover;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+}
+
+/*
+role="list" is required in the html for accessibility when removing list styles
+due to a Safari bug-feature,
+see https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+*/
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+}
