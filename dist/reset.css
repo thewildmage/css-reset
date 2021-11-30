@@ -24,8 +24,8 @@ body {
 }
 
 body {
-    line-height: max(calc(1ex / 0.32), 1.5);
     -webkit-font-smoothing: antialiased;
+    line-height: max(calc(1ex / 0.32), 1.5);
 }
 
 canvas,
