@@ -3,6 +3,7 @@ Inspired and informed by:
 
 - Andy Bell's "A Modern CSS Reset" (https://piccalil.li/blog/a-modern-css-reset/)
 - Edoardo Cavazza's "Modern CSS Techniques To Improve Legibility" (https://www.smashingmagazine.com/2020/07/css-techniques-legibility/)
+- Jesús Ricarte's " Using calc to figure out optimal line-height" (https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/)
 - Josh Comeau's "My Custom CSS Reset" (https://www.joshwcomeau.com/css/custom-css-reset)
 - Scott O'Hara's "'Fixing' Lists" (https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html)
 - Zach Leatherman's "Barebones CSS for Fluid Images" (https://www.zachleat.com/web/fluid-images/)
@@ -19,8 +20,14 @@ Inspired and informed by:
 }
 
 body {
+    --line-height: calc(1ex / 0.32);
+
     -webkit-font-smoothing: antialiased;
-    line-height: max(calc(1ex / 0.32), 1.5);
+    line-height: var(--line-height);
+}
+
+body * {
+    line-height: var(--line-height);
 }
 
 canvas,
