@@ -5,6 +5,7 @@ Inspired and informed by:
 - Edoardo Cavazza's "Modern CSS Techniques To Improve Legibility" (https://www.smashingmagazine.com/2020/07/css-techniques-legibility/)
 - Jesús Ricarte's " Using calc to figure out optimal line-height" (https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/)
 - Josh Comeau's "My Custom CSS Reset" (https://www.joshwcomeau.com/css/custom-css-reset)
+- Kilian Valkof's "Your CSS reset needs text-size-adjust (probably)" (https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/)
 - Scott O'Hara's "'Fixing' Lists" (https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html)
 - Zach Leatherman's "Barebones CSS for Fluid Images" (https://www.zachleat.com/web/fluid-images/)
 */
@@ -24,6 +25,9 @@ body {
 
     -webkit-font-smoothing: antialiased;
     line-height: var(--line-height);
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 body * {
