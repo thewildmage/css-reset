@@ -6,14 +6,6 @@
     "rules": {
         "declaration-colon-newline-after": null,
         "indentation": 4,
-        "max-line-length": [
-            120,
-            {
-                "ignore": [
-                    "comments"
-                ]
-            }
-        ],
         "no-descending-specificity": null,
         "order/order": [
             "custom-properties",
