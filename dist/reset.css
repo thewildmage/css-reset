@@ -74,12 +74,16 @@ p {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: 1.1;
+h2 {
+    --line-height: calc(1ex / 0.42);
+}
+
+h3 {
+    --line-height: calc(1ex / 0.38);
+}
+
+h4 {
+    --line-height: calc(1ex / 0.37);
 }
 
 /*
